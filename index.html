@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>thebigcrafter | New plugins for a new era</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.config.js"></script>
+  </head>
+  <body>
+    <div id="web" class="">
+      <!-- HEADER -->
+      <div
+        class="header w-full h-96 bg-gradient-to-r from-[#f2709c] to-[#ff9472] flex items-center justify-center flex-col"
+      >
+        <div class="title-box">
+          <p
+            class="text-center text-white text-3xl animate__animated animate__backInRight mb-5"
+          >
+            thebigcrafter
+          </p>
+          <p
+            class="text-center text-white text-5xl animate__animated animate__backInLeft"
+          >
+            New plugins for a new era
+          </p>
+        </div>
+        <div class="button-box mt-6">
+          <button
+            class="bg-transparent border-2 border-white text-white rounded-full w-24 h-10 mr-2 animate__animated animate__fadeInUp cursor-pointer hover:bg-white hover:text-black duration-300"
+            @click="redirect2('https://github.com/thebigcrafter')"
+          >
+            <i class="fa-brands fa-github"></i>
+            <span> GitHub</span>
+          </button>
+          <button
+            class="bg-transparent border-2 border-white text-white rounded-full w-24 h-10 ml-2 animate__animated animate__fadeInUp cursor-pointer hover:bg-white hover:text-black duration-300"
+            @click="redirect2(discordInviteLink)"
+          >
+            <i class="fa-brands fa-discord"></i>
+            <span> Discord</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

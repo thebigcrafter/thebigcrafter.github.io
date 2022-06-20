@@ -1,0 +1,6 @@
+tailwind.config = {
+  theme: {
+    extend: {
+    },
+  },
+};
