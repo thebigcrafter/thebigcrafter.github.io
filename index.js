@@ -24,14 +24,78 @@ createApp({
             "Our plugins come with detailed documentation and a Discord server to support everyone who has problems with our plugins.",
         },
       ],
+      members: [
+        {
+          realName: "Nguyễn Minh Thọ",
+          nickname: "Toby",
+          avatar: "https://avatars.githubusercontent.com/u/106535893?v=4",
+          socials: [
+            {
+              i: "fa-solid fa-envelope",
+              url: "mailto:tobydev27@outlook.com",
+            },
+            {
+              i: "fa-brands fa-github",
+              url: "https://github.com/MintoD3v",
+            },
+          ],
+        },
+        {
+          realName: "Nguyễn Khang",
+          nickname: "Mcbeany",
+          avatar: "https://avatars.githubusercontent.com/u/77101686?v=4",
+          socials: [
+            {
+              i: "fa-solid fa-envelope",
+              url: "mailto:mcbeany7@gmail.com",
+            },
+            {
+              i: "fa-brands fa-github",
+              url: "https://github.com/Mcbeany",
+            },
+          ],
+        },
+        {
+          realName: "Thành Nhân",
+          nickname: "NhanAZ",
+          avatar: "https://avatars.githubusercontent.com/u/60387689?v=4",
+          socials: [
+            {
+              i: "fa-solid fa-envelope",
+              url: "mailto:nhanaz@duck.com",
+            },
+            {
+              i: "fa-brands fa-github",
+              url: "https://github.com/NhanAZ",
+            },
+          ],
+        },
+        {
+          realName: "Nguyễn Hiếu",
+          nickname: "DavidGlitch04",
+          avatar:
+            "https://cdn.discordapp.com/attachments/975424124602187826/989526767184265266/anh-meo-cute-de-thuong-dang-yeu-42.jpg",
+          socials: [
+            {
+              i: "fa-solid fa-envelope",
+              url: "mailto:nguyenhieucoder47@gmail.com",
+            },
+            {
+              i: "fa-brands fa-github",
+              url: "https://github.com/DavidGlitch04",
+            },
+            {
+              i: "fa-brands fa-facebook",
+              url: "https://www.facebook.com/DavidGlitchDev",
+            },
+          ],
+        },
+      ],
     };
   },
   methods: {
     redirect2(url) {
       window.open(url, "_blank");
-    },
-    mail2(email) {
-      window.open("mailto:" + email, "_blank");
     },
   },
 }).mount("#web");
