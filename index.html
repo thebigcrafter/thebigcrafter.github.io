@@ -15,9 +15,8 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      href="https://cdn.jsdelivr.net/combine/npm/animate.css@4.1.1,npm/aos@2.3.4/dist/aos.min.css"
     />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
       body {
@@ -29,16 +28,16 @@
     <div id="web" class="w-full h-full overflow-hidden">
       <!-- HEADER -->
       <div
-        class="w-full h-96 bg-gradient-to-r from-[#f2709c] to-[#ff9472] grid place-items-center"
+        class="w-full h-96 grid place-items-center bg-gradient-to-r from-[#f2709c] to-[#ff9472]"
       >
         <div>
           <p
-            class="text-center text-white font-semibold text-3xl animate__animated animate__backInRight mb-5"
+            class="mb-5 text-3xl font-semibold text-white text-center animate__animated animate__backInRight"
           >
             thebigcrafter
           </p>
           <p
-            class="text-center text-white font-semibold text-5xl animate__animated animate__backInLeft"
+            class="text-5xl font-semibold text-white text-center animate__animated animate__backInLeft"
           >
             New plugins for a new era
           </p>
@@ -47,19 +46,19 @@
       <!-- ABOUT US -->
       <div class="w-full grid place-items-center">
         <p
-          class="text-center text-4xl font-semibold my-4 animate__animated animate__fadeIn animate__slow"
+          class="my-5 text-4xl font-semibold text-center animate__animated animate__fadeIn animate__slow"
         >
           We create awesome plugins
         </p>
         <div
-          class="w-11/12 mt-3 mb-10 grid gap-5 md:grid-cols-3 md:grid-rows-1 sm:grid-cols-1 sm:grid-rows-3"
+          class="w-11/12 grid gap-5 md:grid-cols-3 md:grid-rows-1 sm:grid-cols-1 sm:grid-rows-3"
         >
           <div
-            class="shadow-xl rounded-lg hover:shadow-2xl duration-300 cursor-pointer border-t-4 border-[#f98287]"
+            class="rounded-lg shadow-xl hover:shadow-2xl border-t-4 border-[#f98287] cursor-pointer"
             v-for="card in cards"
             data-aos="zoom-in"
           >
-            <div class="text-center text-4xl mt-4">
+            <div class="mt-4 text-4xl text-center">
               <i :class="card.i"></i>
             </div>
             <div class="mt-3">
@@ -74,24 +73,24 @@
       <!-- TEAM MEMBERS -->
       <div class="grid place-items-center">
         <p
-          class="text-center text-4xl font-semibold my-4 animate__animated animate__fadeIn animate__slow"
+          class="my-5 text-4xl font-semibold text-center animate__animated animate__fadeIn animate__slow"
         >
           Meet the team
         </p>
         <div
-          class="w-11/12 grid gap-5 mt-3 lg:grid-cols-4 lg:grid-rows-1 md:grid-cols-2 md:grid-rows-2 sm:grid-cols-1 sm:grid-rows-4"
+          class="w-11/12 grid gap-5 lg:grid-cols-4 lg:grid-rows-1 md:grid-cols-2 md:grid-rows-2 sm:grid-cols-1 sm:grid-rows-4"
         >
           <div
-            class="mx-auto w-full h-full shadow-xl hover:shadow-2xl cursor-pointer border-t-4 border-[#f98287] duration-300 rounded-lg"
+            class="rounded-lg shadow-xl hover:shadow-2xl border-t-4 border-[#f98287] cursor-pointer"
             v-for="member in members"
             data-aos="zoom-in"
           >
             <img
               :src="member.avatar"
               alt="avatar"
-              class="rounded-full w-44 h-44 mx-auto my-3"
+              class="w-44 h-44 cursor-pointer mx-auto my-3 rounded-full"
             />
-            <p class="text-center text-xl mt-2 font-medium">
+            <p class="mt-2 text-xl font-medium text-center">
               {{member.realName}} ({{member.nickname}})
             </p>
             <div class="flex justify-around py-2">
@@ -108,8 +107,7 @@
       </div>
     </div>
 
-    <script src="https://unpkg.com/vue@3"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/combine/npm/vue@3.2.37,npm/aos@2.3.4"></script>
     <script src="./index.js"></script>
   </body>
 </html>
