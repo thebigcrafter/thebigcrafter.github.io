@@ -91,6 +91,15 @@ createApp({
           ],
         },
       ],
+      plugins: [ /** Only works with 1 plugin, more plugins will make the grid work incorrectly! */
+        {
+          name: "OhMyPMMP",
+          description:
+            "📦 A plugin manager for PocketMine-MP downloads plugin from PocketMine-MP official plugin repository.",
+          icon: "https://raw.githubusercontent.com/thebigcrafter/oh-my-pmmp/main/assets/icon.png",
+          homepage: "https://github.com/thebigcrafter/oh-my-pmmp",
+        },
+      ],
     };
   },
   methods: {
