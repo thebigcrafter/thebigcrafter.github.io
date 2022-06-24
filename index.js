@@ -98,4 +98,7 @@ createApp({
       window.open(url, "_blank");
     },
   },
+  mounted() {
+    AOS.init();
+  },
 }).mount("#web");

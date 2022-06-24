@@ -17,6 +17,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
       body {
@@ -54,8 +55,9 @@
           class="w-11/12 mt-3 mb-10 grid gap-5 md:grid-cols-3 md:grid-rows-1 sm:grid-cols-1 sm:grid-rows-3"
         >
           <div
-            class="shadow-xl rounded-lg hover:shadow-2xl duration-300 animate__animated animate__zoomIn cursor-pointer border-t-4 border-[#f98287]"
+            class="shadow-xl rounded-lg hover:shadow-2xl duration-300 cursor-pointer border-t-4 border-[#f98287]"
             v-for="card in cards"
+            data-aos="zoom-in"
           >
             <div class="text-center text-4xl mt-4">
               <i :class="card.i"></i>
@@ -79,7 +81,11 @@
         <div
           class="w-11/12 grid gap-5 mt-3 lg:grid-cols-4 lg:grid-rows-1 md:grid-cols-2 md:grid-rows-2 sm:grid-cols-1 sm:grid-rows-4"
         >
-          <div class="mx-auto w-full h-full shadow-xl hover:shadow-2xl cursor-pointer border-t-4 border-[#f98287] duration-300 rounded-lg animate__animated animate__zoomIn" v-for="member in members">
+          <div
+            class="mx-auto w-full h-full shadow-xl hover:shadow-2xl cursor-pointer border-t-4 border-[#f98287] duration-300 rounded-lg"
+            v-for="member in members"
+            data-aos="zoom-in"
+          >
             <img
               :src="member.avatar"
               alt="avatar"
@@ -103,6 +109,7 @@
     </div>
 
     <script src="https://unpkg.com/vue@3"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./index.js"></script>
   </body>
 </html>
